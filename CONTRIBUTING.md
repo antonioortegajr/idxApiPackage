@@ -1,8 +1,10 @@
 # Contributing
 
-Contributions are **welcome** and will be fully **credited**.
+Only IDXers are allowed to contribute at this time.
 
-We accept contributions via Pull Requests on [Github](https://github.com/thephpleague/:package_name).
+Contributions will be **welcome** and will be fully **credited**.
+
+We will accept contributions via Pull Requests on [Github](https://github.com/thephpleague/:package_name).
 
 
 ## Pull Requests
@@ -27,6 +29,3 @@ We accept contributions via Pull Requests on [Github](https://github.com/thephpl
 ``` bash
 $ phpunit
 ```
-
-
-**Happy coding**!

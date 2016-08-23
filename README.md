@@ -8,7 +8,7 @@ Only IDX peeps at this time.
 
 ## Credits
 
-- [:author_name](https://github.com/:antonioortegajr)
+- [antonioortegajr](https://github.com/:antonioortegajr)
 
 ## License
 
