@@ -4,8 +4,6 @@ Only IDXers are allowed to contribute at this time.
 
 Contributions will be **welcome** and will be fully **credited**.
 
-We will accept contributions via Pull Requests on [Github](https://github.com/thephpleague/:package_name).
-
 
 ## Pull Requests
 
