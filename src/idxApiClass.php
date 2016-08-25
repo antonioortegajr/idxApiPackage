@@ -22,20 +22,15 @@ class idxApiClass
     public function apiCall($requestMethod, $apiKey, $apiComponent, $apiMethod)
     {
 
-
-
-      //IDX Broker API base url
-      $baseUrl ='https://api.idxbroker.com';
-
-      //Combine the base url and component and API method
-      $endpoint = $baseUrl.'/'.$apiComponent.'/'.$apiMethod;
+      //Combine the component and API method
+      $endpoint = $apiComponent.'/'.$apiMethod;
 
       //create meta data about API call
       $meta = array('endpoint'=>$endpoint,'method'=>$requestMethod);
 
 
       //Use Guzzle for API call and return json
-      $client = new GuzzleHttp\Client;
+      $client = new GuzzleHttp\Client(['base_url' => 'https://api.idxbroker.com']);
 
       $request = $client->$requestMethod(
         $endpoint,
