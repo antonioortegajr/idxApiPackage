@@ -39,6 +39,7 @@ class idxApiClass
             'exceptions' => false
         ]
       );
+      
       //http code return from above API call
       $code = $request->getStatusCode();
       switch ($code) {
