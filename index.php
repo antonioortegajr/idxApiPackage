@@ -16,7 +16,7 @@ $class = new idxApiClass();
 
 $apiKey = 'yourApiKeyHere';
 
-// GET, PUT, POST, and DELETE not all methods are available
+// GET, PUT, POST, and DELETE. Not all methods are available
 $requestMethod = 'GET';
 
 //available components leads, clients, partners, mls
