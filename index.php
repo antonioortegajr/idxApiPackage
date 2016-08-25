@@ -14,7 +14,7 @@ require_once "src/idxApiClass.php";
 
 $class = new idxApiClass();
 
-$apiKey = '';
+$apiKey = 'yourApiKeyHere';
 
 // GET, PUT, POST, and DELETE not all methods are available
 $requestMethod = 'GET';
