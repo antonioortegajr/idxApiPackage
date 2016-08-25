@@ -19,7 +19,7 @@ class idxApiClass
      * Thanks to https://www.sitepoint.com/starting-new-php-package-right-way/
      * and https://github.com/thephpleague/skeleton
      */
-    public function apiCall($requestMethod, $apiKey, $apiComponent, $apiMethod)
+    public function apiCall($requestMethod, $apiKey, $apiComponent, $apiMethod, $apiVersion)
     {
 
       //Combine the component and API method
@@ -34,7 +34,8 @@ class idxApiClass
           'headers' => [
               'Content-Type' => 'application/x-www-form-urlencoded',
               'accesskey'=>$apiKey,
-              'outputtype'=>'json'
+              'outputtype'=>'json',
+              'apiversion'=> $apiVersion
             ],
             'exceptions' => false
         ]
