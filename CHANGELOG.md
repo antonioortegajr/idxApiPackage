@@ -1,10 +1,10 @@
 #Changelog
-All Notable changes to `:package_name` will be documented in this file
+All Notable changes to this package will be documented in this file
 
-## NEXT - YYYY-MM-DD
+## NEXT - 2016-08-24
 
 ### Added
-- Nothing
+- Text to change log
 
 ### Deprecated
 - Nothing
