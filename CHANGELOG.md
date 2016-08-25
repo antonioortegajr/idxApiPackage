@@ -18,8 +18,6 @@ All Notable changes to this package will be documented in this file
 ### Security
 - Nothing
 
-
-
 ## 2016-08-24
 
 ### Added
