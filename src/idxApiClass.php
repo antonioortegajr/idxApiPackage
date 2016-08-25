@@ -119,7 +119,8 @@ class idxApiClass
         'endPoint'=> $endpoint,
         'requestMethod'=>$requestMethod,
         'Hourly-Access-Key-Usage'=> $apiCallsThisHour,
-        'version'=> $apiVersionCalled
+        'version'=> $apiVersionCalled,
+        'support'=>'developers@idxbroker.com'
       );
       $meta = json_encode($meta);
 
