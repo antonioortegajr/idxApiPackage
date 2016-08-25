@@ -22,6 +22,8 @@ class idxApiClass
     public function apiCall($requestMethod, $apiKey, $apiComponent, $apiMethod)
     {
 
+
+
       //IDX Broker API base url
       $baseUrl ='https://api.idxbroker.com';
 
@@ -31,25 +33,33 @@ class idxApiClass
       //create meta data about API call
       $meta = array('endpoint'=>$endpoint,'method'=>$requestMethod);
 
-      //Use Guzzle for API call
-      $client = new \GuzzleHttp\Client;
-      $request = $client->$requestMethod($endpoint,
-      array('headers' => array('Content-Type' => 'application/x-www-form-urlencoded',
-      'accesskey'=>$apiKey,'outputtype'=>'json')
-      ));
 
+      //Use Guzzle for API call and return json
+      $client = new GuzzleHttp\Client;
+
+      $request = $client->$requestMethod(
+        $endpoint,
+        [
+          'headers' => [
+              'Content-Type' => 'application/x-www-form-urlencoded',
+              'accesskey'=>$apiKey,
+              'outputtype'=>'json'
+            ],
+            'exceptions' => false
+        ]
+      );
       //http code return from above API call
       $code = $request->getStatusCode();
 
-      // Get all of the response headers
-      foreach ($response->getHeaders() as $name => $values) {
-        echo $name . ': ' . implode(', ', $values) . "\r\n";
-      }
 
-      //$returnBody = $request->getBody();
-      $returnMeta = $meta;
+      $returnBody = $request->getBody();
 
       return $code;
 
+
+
+
+
         }
+
 }
