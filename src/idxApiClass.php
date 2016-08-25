@@ -39,60 +39,93 @@ class idxApiClass
             'exceptions' => false
         ]
       );
-      
+
       //http code return from above API call
       $code = $request->getStatusCode();
       switch ($code) {
         case 200:
-        $code = array($code => 'OK');
+        $code = array(
+          $code => 'OK'
+          );
         break;
         case 204:
-        $code = array($code => 'We all good, nothing to return.') ;
+        $code = array(
+          $code => 'We all good, nothing to return.'
+          ) ;
         break;
         case 400:
-        $code = array($code => 'Required parameter missing or invalid. Check the API endpoint used.');
+        $code = array(
+          $code => 'Required parameter missing or invalid. Check the API endpoint used.'
+          );
         break;
         case 401:
-        $code = array($code => 'accesskey not valid or revoked. You could reset the API key');
+        $code = array(
+          $code => 'accesskey not valid or revoked.'
+          );
         break;
         case 403:
-        $code = array($code => 'Call not using SSL (HTTPS). This could be the hosting used to make the call.');
+        $code = array(
+          $code => 'Call not using SSL (HTTPS). This is likey the hosting used to make the call.'
+          );
         break;
         case 404:
-        $code = array($code => 'The requested URL was not found on this server. Check the API endpoint you used.');
+        $code = array(
+          $code => 'The requested URL was not found on this server. Check the API endpoint you used.'
+          );
         break;
         case 406:
-        $code = array($code => 'No API Key provided.');
+        $code = array(
+          $code => 'No API Key provided.'
+          );
         break;
         case 409:
-        $code = array($code => 'Invalid API component specified or duplicate unique data detected.');
+        $code = array(
+          $code => 'Invalid API component specified or duplicate unique data detected.'
+          );
         break;
         case 412:
-        $code = array($code => 'Over Hourly API limit. Wait an hour and re check key in middleware.');
+        $code = array(
+          $code => 'Over Hourly API limit. Wait an hour and re check key in middleware.'
+          );
         break;
         case 417:
-        $code = array($code => 'Either over 1k in saved links created by API or no title in the saved links PUT request. Check response header for indication.');
+        $code = array(
+          $code => 'Either over 1k in saved links created by API or no title in the saved links PUT request. Check response header for indication.'
+          );
         break;
         case 500:
-        $code = array($code => 'General error.');
+        $code = array(
+          $code => 'General error.'
+          );
         break;
         case 503:
-        $code = array($code=>'Scheduled or emergency API maintenance will result in 503 errors.');
+        $code = array(
+          $code=>'Scheduled or emergency API maintenance will result in 503 errors.'
+          );
         break;
         case 521:
-        $code = array($code => 'Temporary error. There is a possibility that not all API methods are affected.');
+        $code = array(
+          $code => 'Temporary error. There is a possibility that not all API methods are affected.'
+          );
         break;
       }
 
       //create meta data about this API call
-      $meta = array('code'=>$code,'request method'=>$requestMethod);
+      $endpoint = $request->getEffectiveUrl();
+      $apiCallsThisHour = $request->getHeader('Hourly-Access-Key-Usage');
+      $apiVersionCalled = $request->getHeader('Api-Version');
+      $meta = array(
+        'code'=>$code,
+        'endPoint'=> $endpoint,
+        'requestMethod'=>$requestMethod,
+        'Hourly-Access-Key-Usage'=> $apiCallsThisHour,
+        'version'=> $apiVersionCalled
+      );
+      $meta = json_encode($meta);
 
       $returnBody = $request->getBody();
 
-      return $returnBody;
-
-
-
+      return $meta;
 
 
         }
