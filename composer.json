@@ -1,12 +1,12 @@
 {
-    "name": "league/:package_name",
-    "description": "packe for calling the IDX Broker API",
+    "name": "idxBrokerApi",
+    "description": "package for calling the IDX Broker API",
     "keywords": [
         "IDX",
         "IDX Broker",
         "real estate"
     ],
-    "homepage": "https://github.com/php-loep/:package_name",
+    "homepage": "https://github.com/antonioortegajr/idxApiPackage",
     "license": "MIT",
     "authors": [
         {
