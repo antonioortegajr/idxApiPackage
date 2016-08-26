@@ -2,7 +2,7 @@
 
 /*
 * Example use
-* Pass your API endpoint and the method to the api_call()
+* Pass your API endpoint and the method to the apiCall()
 * Docs here: https://developers.idxbroker.com/idx-broker-api/
 * Thanks to https://www.sitepoint.com/starting-new-php-package-right-way/
 * and https://github.com/thephpleague/skeleton
@@ -22,8 +22,10 @@ $requestMethod = 'GET';
 //available components leads, clients, partners, mls
 $apiComponent = 'leads';
 
-$apiMethod = 'listmethods';
+$apiMethod = 'lead';
+
+$apiVersion = '1.0.4';
 
 
 //calling leads/listmethods
-echo $class->apiCall($requestMethod, $apiKey, $apiComponent, $apiMethod);
+echo $class->apiCall($requestMethod, $apiKey, $apiComponent, $apiMethod, $apiVersion);
