@@ -2,6 +2,8 @@
 
 namespace antonioortegajr\idxAPI;
 
+use GuzzleHttp;
+
 class idxApiClass
 {
 
