@@ -10,7 +10,8 @@ Only IDX peeps at this time.
 #Usage
 
 Example:
-`<?php
+```php
+<?php
 
 /*
 * Example use
