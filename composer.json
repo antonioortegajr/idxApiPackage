@@ -12,7 +12,7 @@
         {
             "name": "Antonio Orteag Jr",
             "email": "antonioorteagjr@gmail.com",
-            "homepage": "http://antonioorteagjr.com",
+            "homepage": "http://antonioortegajr.com",
             "role": "Developer"
         }
     ],
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "League\\Skeleton\\": "src"
+            "antonioortegajr\\idxAPI\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "League\\Skeleton\\Test\\": "tests"
+            "antonioortegajr\\idxAPI\\Test\\": "tests"
         }
     },
     "extra": {
