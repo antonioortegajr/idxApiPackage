@@ -1,6 +1,6 @@
 {
     "name": "antonioortegajr/idx-broker-api",
-    "description": "package for calling the IDX Broker API",
+    "description": "package for calling the IDX Broker API using Guzzle",
     "keywords": [
         "IDX",
         "IDX Broker",
