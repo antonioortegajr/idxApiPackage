@@ -1,6 +1,6 @@
 <?php
 
-//namespace Swader\Diffbot;
+namespace antonioortegajr\idxAPI;
 
 class idxApiClass
 {
@@ -10,6 +10,7 @@ class idxApiClass
      */
     public function __construct()
     {
+
     }
 
     /**
