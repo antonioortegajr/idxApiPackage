@@ -1,5 +1,5 @@
 {
-    "name": "idxBrokerApi",
+    "name": "antonioortegajr/idxBrokerApi",
     "description": "package for calling the IDX Broker API",
     "keywords": [
         "IDX",
