@@ -18,8 +18,8 @@ Example:
 * Pass your API endpoint and the method to the apiCall()
 */
 
-require_once "vendor/autoload.php";
-require_once "src/idxApiClass.php";
+require_once "vendor/antonioortegajr/idx-broker-api/vendor/autoload.php";
+require_once "vendor/antonioortegajr/idx-broker-api/src/idxApiClass.php";
 
 use \antonioortegajr\idxAPI as idxCall;
 
@@ -38,15 +38,6 @@ $apiVersion = '1.0.4';
 $apiClass = new idxCall\idxApiClass();
 
 echo $apiClass::apiCall($requestMethod, $apiKey, $apiComponent, $apiMethod, $apiVersion);
-`
 
-
-## Credits
-
-- [antonioortegajr](https://github.com/:antonioortegajr)
-
-## License
-
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 This package based on the work of https://github.com/thephpleague/skeleton
