@@ -25,7 +25,7 @@ use \antonioortegajr\idxAPI as idxCall;
 
 $apiKey = 'yourApiKeyHere';
 
-// GET, PUT, POST, and DELETE. Not all methods are available
+// GET Not all methods are available in this version
 $requestMethod = 'GET';
 
 //available components leads, clients, partners, mls
