@@ -1,5 +1,9 @@
 # IDX API package
 
+<a href="https://packagist.org/packages/antonioortegajr/idx-broker-api" target="_blank">
+    <img src="https://img.shields.io/packagist/v/antonioortegajr/idx-broker-api.svg?style=flat-square" alt="Current version" />
+</a>
+
 Package for calling the IDX Broker API.
 
 ## Contributing
