@@ -7,6 +7,14 @@ Package for calling the IDX Broker API.
 Only IDX peeps at this time.
 
 
+## Install
+
+Via Composer
+``` bash
+$ composer require antonioortegajr/idx-broker-api
+```
+
+
 #Usage
 
 Example:
