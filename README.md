@@ -50,6 +50,3 @@ $apiVersion = '1.0.4';
 $apiClass = new idxCall\idxApiClass();
 
 echo $apiClass::apiCall($requestMethod, $apiKey, $apiComponent, $apiMethod, $apiVersion);
-
-
-This package based on the work of https://github.com/thephpleague/skeleton
