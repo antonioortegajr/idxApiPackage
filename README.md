@@ -1,8 +1,9 @@
 # IDX API package
 
-<a href="https://packagist.org/packages/antonioortegajr/idx-broker-api" target="_blank">
-    <img src="https://img.shields.io/packagist/v/antonioortegajr/idx-broker-api.svg?style=flat-square" alt="Current version" />
-</a>
+[![Latest Stable Version](https://poser.pugx.org/antonioortegajr/idx-broker-api/v/stable)](https://packagist.org/packages/antonioortegajr/idx-broker-api)
+[![Latest Unstable Version](https://poser.pugx.org/antonioortegajr/idx-broker-api/v/unstable)](https://packagist.org/packages/antonioortegajr/idx-broker-api)
+[![License](https://poser.pugx.org/antonioortegajr/idx-broker-api/license)](https://packagist.org/packages/antonioortegajr/idx-broker-api)
+[![Total Downloads](https://poser.pugx.org/antonioortegajr/idx-broker-api/downloads)](https://packagist.org/packages/antonioortegajr/idx-broker-api)
 
 Package for calling the IDX Broker API.
 
